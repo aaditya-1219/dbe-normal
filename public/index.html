@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Details</title>
+    <link rel="stylesheet" href="/public/index.css">
+    <!--     
+        Course -> Branch
+        Course -> Fee
+        Course -> Teacher_id
+        Course -> Teacher_name
+        Teacher_id -> Teacher_name
+     -->
+</head>
+
+<body>
+    <div id="background"></div>
+    <div class="container">
+        <h1>Course Details</h1>
+        <form action="/formPost" method="post">
+            <h3>Course name:</h3>
+            <input type="text" name="course">
+            <h3>Fee:</h3>
+            <input type="number" name="fee">
+            <h3>Branch:</h3>
+            <input type="text" name="branch">
+            <h3>Teacher ID:</h3>
+            <input type="number" name="teacherId">
+            <h3>Teacher Name:</h3>
+            <input type="text" name="teacherName">
+            <button type="submit" onclick="submit()">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
